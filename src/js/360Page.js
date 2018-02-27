@@ -1,0 +1,1 @@
+require("../css/360Page.css");require("jquery");require("bootstrap");require("bootstrap-loader");var socket=io.connect();socket.on("reload",function(){location.reload();});

@@ -1,0 +1,6 @@
+{"createNames":[],
+	"runNames":["messagePage","indexPage","aboutUsPage","EnglishPage","360Page","qqPage"],
+	"innerHtml":"<!DOCTYPE html><html> <head> <meta charset=\"UTF-8\"> <title></title> </head><body><script src=\"/socket.io/socket.io.js\" type=\"text/javascript\" charset=\"utf-8\"></script></body></html>",
+	"innerJs":"require(\"../css/@.css\");require(\"jquery\");require(\"bootstrap\");require(\"bootstrap-loader\");var socket=io.connect();socket.on(\"reload\",function(){location.reload();});",
+	"innerCss":"html,body{height:100%;width:100%;padding:0}"
+}

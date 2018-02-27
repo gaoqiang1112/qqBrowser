@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link href="http://localhost:3000/css/messagePage.css" rel="stylesheet"></head>
+	<body>
+		<audio id="bgMusic" src="/img/简讯提示音.mp3">
+			您的浏览器不支持 audio 标签。
+		</audio>
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button class="btn btn-primary">
+					<span class="glyphicon glyphicon-user"></span>
+				</button>
+			</div>
+			<input class="form-control" type="text" id="name" value="" />
+		</div>
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button class="btn btn-primary">
+					<span class="glyphicon glyphicon-comment"></span>
+				</button>
+			</div>
+			<input class="form-control" type="text" id="content" value="" />
+		</div>
+		<div id="myBtn">
+			<div class="col-xs-8" style="padding: 0;">
+				<button id="myBtn2All" class="btn btn-warning">发送给所有人</button>
+				<button id="myBtn2other" class="btn btn-primary">发送给其他人</button>
+				<button id="myBtn2one" class="btn btn-danger">发送给一个人</button>
+			</div>
+		</div>
+		<div class="col-xs-4" style="padding: 0;">
+			<ul class="list-unstyled" style="line-height: 33px;">
+				<!--在li上可以决定下来的方向dropup是向上  默认向下-->
+				<li class="dropdown">
+					<!--在目标上添加data-toggle=dropdown即可-->
+					<a href="javascript:void(0)" data-toggle="dropdown" id="xiaLa" style="text-decoration:none;color:darkblue;">
+						请选择一个人
+						<!--caret表示下箭头-->
+						<span class="caret"></span>
+					</a>
+					<!--下拉菜单必须与触发按钮是同级兄弟标签 有同一个父级元素
+					并且在这个父级元素下只有一对触发按钮和下拉菜单-->
+					<ul class="dropdown-menu">
+						
+					</ul>
+				</li>
+			</ul>
+			<input type="hidden" name="socketId" id="socketId" value="" />
+		</div>
+		<div class="" id="neirong">
+			
+		</div>
+		<script src="/socket.io/socket.io.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://localhost:3000/js/messagePage.js"></script></body>
+
+</html>
